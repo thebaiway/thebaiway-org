@@ -1,130 +1,89 @@
 :root {
-    --twitter-blue: #00ACEE;
-    --card-white: #fff;
-    --card-black: #000;
-    --podcast-purple: #773fe7;
-    --youtube-red: #FF0000;
-    --instagram-purple: #E1306C;
-    --facebook-blue: #4267B2;
+    --main-color: rgb(145, 139, 139);
+    --background-color: black;
+    --page-font: white;
     
 }
 
-.card {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    /* background: var(--background-color); */
+    color: var(--main-color);
 }
 
-.card__wrapper {
-    height: 400px;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
-    background: var(--card-white);
-    box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, .22);
-    border-radius: 10px;
+#main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding: 20px 0px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 50%;
+    border: 1px solid black;
 }
 
-.card__user--img {
-    border: 2px solid var(--facebook-blue);
-    height: 70px;
-    width: 70px;
-    margin: 2rem 0 1.5rem;
+#div-one-img {
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
 }
 
-.card-info {
-    margin-bottom: 2rem;
-}
-
-.card__name {
-    text-align: center;
-    display: block;
+#name {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 4rem;
     font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: .5rem;
+    color: var(--main-color);
+    border: 1px solid black;
 }
 
-.card__title {
-    display: block;
-    font-size: .7rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.card__icon {
-    width: 200px;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid var(--card-black);
-    margin-bottom: .4rem;
-    overflow: hidden;
+#socials {
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: background .3s ease-in-out, color .3s ease-in-out;
+    gap: 10px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.fa-github:hover, .fa-instagram:hover  {
     cursor: pointer;
 }
 
-.card__icon--box {
-    width: 25px;
-    display: inline-block;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@media (max-width: 640px){
 
-.card__icon--title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+       #main {
+        display: flex;
+        flex-direction: column;
+       }
 
-.card__icon--tw {
-    color: var(--twitter-blue);
-    border: 1px solid var(--twitter-blue);
-}
+       #name {
+        font-size: 2rem;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 
-.card__icon--tw:hover {
-    background: var(--twitter-blue);
-    color: var(--card-white);
-}
+    #div-one-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    
+    }
+    
+    @media (min-width: 768px){
+    
 
-.card__icon--ig {
-    color: var(--instagram-purple);
-    border: 1px solid var(--instagram-purple);
-}
+    
+    }
+    
+    @media (min-width: 1024px){
+    
+  
+    
+    }
+    
+    @media (min-width: 1200px){
+    
+    }
 
-.card__icon--ig:hover {
-    background: var(--instagram-purple);
-    color: var(--card-white);
-}
-
-.card__icon--yt {
-    color: var(--youtube-red);
-    border: 1px solid var(--youtube-red);
-}
-
-.card__icon--yt:hover {
-    background: var(--youtube-red);
-    color: var(--card-white);
-}
-
-.card__icon--pc {
-    color: var(--podcast-purple);
-    border: 1px solid var(--podcast-purple);
-}
-
-.card__icon--pc:hover {
-    background: var(--podcast-purple);
-    color: var(--card-white);
-}

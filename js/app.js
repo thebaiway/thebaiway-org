@@ -11,3 +11,10 @@ function github() {
     link.target = "_blank"
     link.click()
   }
+
+  function twitter() {
+    var link = document.createElement("a")
+    link.href = "https://www.twitter.com/thebaiway"
+    link.target = "_blank"
+    link.click()
+  }

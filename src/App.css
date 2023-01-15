@@ -1,0 +1,120 @@
+:root {
+  --body-color: #23252C;
+  --info-text: #F5F5F5;
+  --info-job: #F3BF99;
+  --card-bg: #1A1B21;
+  --info-button: #5093E2;
+  --footer-bg: #161619;
+  --footer-color: #918E9B;
+}
+
+html {
+  background: var(--body-color);
+}
+
+body {
+ margin: 50px 0px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.info--div {
+  background: var(--card-bg);
+}
+
+.info--pic {
+  width:300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.info--name, .info--job, .info--email {
+  text-align: center;
+}
+
+.info--name, .info--job {
+  line-height: .5rem;
+}
+
+.info--name {
+  color: var(--info-text);
+}
+
+.info--job {
+  color: var(--info-job);
+}
+
+.info--email {
+  color:var(--info-text);
+  font-size: .7rem;
+  margin-bottom: 15px;
+}
+
+.info--button_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.info--button_div > button, .info--button_div > button:hover  {
+  width: 100px;
+  border-radius: 5px;
+  border:none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.info--button_left {
+  color: var(--card-bg);
+}
+
+.info--button_right {
+  color: var(--info-text);
+  background: var(--info-button);
+}
+
+.about--div, .interests--div {
+  color: var(--info-text);
+  background: var(--card-bg);
+  border: 1px solid var(--card-bg);
+  padding: 0px 40px;
+  max-width: 300px;
+}
+
+.about--div > h3, .interests--div > h3 {
+  line-height: .02rem;
+}
+
+.about--div > p, .interests--div > p {
+  font-size: .5rem;
+  width: 200px;
+}
+
+.about--div {
+  padding-top: 10px;
+}
+
+.interests--div {
+  padding-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  color: var(--footer-color);
+  background: var(--footer-bg);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+footer > i, footer > i:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
